@@ -13,12 +13,12 @@ publisher.on('error', (err) => {
 });
 
 // create channels to publish messages
-const channel1 = 'status1'
+const channel1 = 'chat2'
 
 // function to publish messages
 async function publish() {
 	console.log(`Started ${ channel1} channel publisher...`);
-	redisClient.publish(channel1, 'yooo, subscribers!');
+	redisClient.publish(channel1, 'yo, subscribers!');
 }
 
 // running function
