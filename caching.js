@@ -28,8 +28,7 @@ app.get('/users', (req, res) => {
   }
 });
 
-
-
+// api using redis( storing and fetching data from redis and if not present in redis then from the url)
 app.get('/cached-users', (req, res) => {
 
   console.log("cached-users api")
